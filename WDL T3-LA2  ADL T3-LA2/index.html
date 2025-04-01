@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <div class="container">
+<div class="product">
+    <h2>Zip-up hoodie</h2>
+    <img src="asset/Men's Classic Housemark zip-up hoodie.jpg" alt="" width="350" height="350">
+    <h3>Price: Php 500.</h3>
+    <button class="buttonAdd" onclick="addToCart('Zip-up hoodie', 500)">Add to Cart</button>
+    <button class="buttonRem" onclick="removeFromCart('Zip-up hoodie', 500)">Remove from Cart</button>
+</div>
+<div class="product">
+    <h2>Penshoppe Hoodie</h2>
+    <img src="asset/Penshoppe Hoodie.jpg" alt="" width="350" height="350">
+    <h3>Price: Php 600</h3>
+    <button class="buttonAdd" onclick="addToCart('Penshoppe Hoodie', 600)">Add to Cart</button>
+    <button class="buttonRem" onclick="removeFromCart('Penshoppe Hoodie', 600)">Remove from Cart</button>
+</div>
+<div class="cart">
+    <h2>Customer's Cart</h2>
+    <ul id="products"></ul>
+</div>
+    </div>
+</body>
+</html>
